@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="listeners" javaclass="com.wm.util.Values">
+    <record name="FTPListener@3034" javaclass="com.wm.util.Values">
+      <number name="port" type="Integer">3034</number>
+      <value name="protocol">FTP</value>
+      <value name="pkg">JcHelloWorld</value>
+      <value name="enabled">true</value>
+      <value name="key">FTPListener@3034</value>
+      <value name="uniqueID">9d0a33f34b3745f4b84cad89a2805cb7</value>
+      <value name="portAlias">ftp</value>
+      <value name="portDescription">Receive large logs for archival in mysql db</value>
+      <value name="factoryKey">webMethods/FTP</value>
+      <value name="configURL">/WmRoot/configFTP.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="pasvAddr"></value>
+    </record>
+    <record name="HTTPListener@5151" javaclass="com.wm.util.Values">
+      <number name="port" type="Integer">5151</number>
+      <value name="protocol">HTTP</value>
+      <value name="pkg">JcHelloWorld</value>
+      <value name="enabled">true</value>
+      <value name="key">HTTPListener@5151</value>
+      <value name="uniqueID">89fcfc1691ee45e59e02e30d3e583847</value>
+      <value name="portAlias">helloOnly</value>
+      <value name="portDescription">Integration Server HTTP port: 5151</value>
+      <value name="hostAccessMode">include</value>
+      <array name="hostAllow" type="value" depth="1">
+      </array>
+      <array name="hostDeny" type="value" depth="1">
+      </array>
+      <null name="hostAllowService"/>
+      <null name="hostAllowServiceRefreshInterval"/>
+      <null name="hostDenyService"/>
+      <null name="hostDenyServiceRefreshInterval"/>
+      <value name="factoryKey">webMethods/HTTP</value>
+      <value name="configURL">/WmRoot/configHTTP.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="listenerType">Regular</value>
+      <value name="clientAuth">none</value>
+      <value name="idProvider">salesforce.com</value>
+      <value name="ssl">false</value>
+      <value name="maxQueue">200</value>
+      <value name="keepAliveTimeout">20000</value>
+      <value name="threadPool">true</value>
+      <value name="minThread">1</value>
+      <value name="maxThread">5</value>
+      <value name="threadPriority">5</value>
+      <value name="usedThreadCount">0</value>
+      <value name="internalPort">-1</value>
+      <value name="curDelay">0</value>
+      <value name="stepsize">10000</value>
+      <value name="suspended">false</value>
+      <null name="jsseDisabledProtocols"/>
+      <null name="jsseEnabledProtocols"/>
+    </record>
+    <record name="HTTPSListener@7070" javaclass="com.wm.util.Values">
+      <number name="port" type="Integer">7070</number>
+      <value name="protocol">HTTPS</value>
+      <value name="pkg">JcHelloWorld</value>
+      <value name="enabled">true</value>
+      <value name="key">HTTPSListener@7070</value>
+      <value name="uniqueID">48af6d81098a4861a664928093ca3b59</value>
+      <value name="portAlias">openId</value>
+      <value name="portDescription">Integration Server HTTPS port: 7070</value>
+      <value name="factoryKey">webMethods/HTTP</value>
+      <value name="configURL">/WmRoot/configHTTP.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="listenerType">Regular</value>
+      <value name="clientAuth">idProvider</value>
+      <value name="idProvider">salesforce.com</value>
+      <value name="ssl">true</value>
+      <value name="maxQueue">200</value>
+      <value name="keepAliveTimeout">20000</value>
+      <value name="internalPort">-1</value>
+      <value name="curDelay">0</value>
+      <value name="stepsize">10000</value>
+      <value name="suspended">false</value>
+      <value name="alias">packages.softwareag.com</value>
+      <value name="keyStore">wm_packages_manager</value>
+      <value name="trustStore">go_daddy_root_ca</value>
+      <null name="jsseDisabledProtocols"/>
+      <null name="jsseEnabledProtocols"/>
+    </record>
+  </record>
+  <record name="access" javaclass="com.wm.util.Values">
+    <record name="FTPListener@3034" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">FTPListener@3034</value>
+    </record>
+    <record name="HTTPListener@5151" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">exclude</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+          <value>wm.server:disconnect</value>
+          <value>wm.server.csrfguard:replaceSpecialCharacters</value>
+          <value>wm.server:ping</value>
+          <value>wm.server.tx:end</value>
+          <value>wm.server:getClusterNodes</value>
+          <value>wm.server:getServerNodes</value>
+          <value>wm.server.csrfguard:isCSRFGuardEnabled</value>
+          <value>wm.server:noop</value>
+          <value>wm.server.csrfguard:getCSRFSecretToken</value>
+          <value>wm.server.tx:execute</value>
+          <value>jc.api.helloworld_.services.v2:helloWorld</value>
+          <value>wm.server.tx:start</value>
+          <value>wm.server:connect</value>
+          <value>wm.server.tx:restart</value>
+        </list>
+      </record>
+      <value name="key">HTTPListener@5151</value>
+    </record>
+    <record name="HTTPSListener@7070" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">HTTPSListener@7070</value>
+    </record>
+  </record>
+</Values>

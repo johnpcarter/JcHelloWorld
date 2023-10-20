@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="Demo" name="HelloWorld">
+    <webMethodsTestCase name="HelloWorld V1 Tester">
+        <service folder="jc.api.helloworld_.services.v1" name="helloWorld">
+            <input>
+                <file filename="resources/test/data/helloWorld-v1/test1-in.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/helloWorld-v1/test1-out.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Check persistence" name="HelloWorld V2 Tester">
+        <service folder="jc.api.helloworld_.services.v2" name="helloWorld">
+            <input>
+                <file filename="resources/test/data/helloWorld-v2/test1-in.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/helloWorld-v2/test1-out.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

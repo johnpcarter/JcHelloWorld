@@ -1,0 +1,54 @@
+<META http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<HTML>
+  <HEAD>
+	  <meta charset="utf-8">
+	  <title>Hello World Documentation</title>
+	  <base href="/HelloWorld">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link rel="stylesheet" href="/JcHelloWorld/styles.css">
+	  <link rel="stylesheet" href="/JcHelloWorld/page.css">	  
+  </HEAD>
+  <BODY style="padding:10px">
+		<div class="app-page" [class.example-is-mobile]="mobileQuery.matches">
+		  <div class="mat-toolbar toolbar">
+		    <div class="toolbar-content">
+		    	<div class="toolbar-title-column">
+		    		<img style="width: 117px" src="/JcHelloWorld/_images/wm.png"/>
+		    		<h1>Documentation Center</h1>
+		    	</div>
+		    		<div class="toolbar-links">
+		    			<a href="http://localhost:9072">Gateway</a>
+		    		</div>
+		    		<div class="toolbar-links">
+		    			<a href="http://localhost:18101">Portal</a>
+		    		</div>
+		    		<div class="toolbar-links">
+		    			<a href="http://localhost:5555">Services</a>
+		    		</div>
+		    	<div class="toolbar-right-column">
+		    		<h1 style="color:white; vertical-align: top; line-height: 25px;margin-top:-5px">Software AG</h1>
+		    		<div class="toolbar-links-right">
+		        		
+		    		</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="page-content">
+		  	<h3>Welcome</h3>
+		  	Online resources for all documentation pertaining to HelloWorld micro-service API implementation.
+		  	<h2><a href="/JcHelloWorld/4/index.dsp"><img src="/JcHelloWorld/_images/forward-button.png" width="18px"> Version 2.0 / 28th May 2019 / Update</a></h2>
+		  		Upgraded, mysql db replaces file based system
+		  	<h2><a href="/JcHelloWorld/3/index.html"><img src="/JcHelloWorld/_images/forward-button.png" width="18px"> Version 1.0 / 4th April 2019 / Update</a></h2>
+		  		Now logs trace to custom file in JcHelloWorld/resources/files
+		  	<h2><a href="/JcHelloWorld/2/index.html"><img src="/JcHelloWorld/_images/forward-button.png" width="18px"> Version 0.6 / 10th March 2019 / Update</a></h2>
+		  		Added 'xxx' use case to showcase error management in the API Gateway;
+		  	<h2><a href="/JcHelloWorld/1/index.html"><img src="/JcHelloWorld/_images/forward-button.png" width="18px"> Version 0.5 / 10th October 2017 / New</a></h2>
+		  		New demo package to showcase API Gateway basics.
+		  </div>
+		</div>
+	</BODY>
+</HTML>
